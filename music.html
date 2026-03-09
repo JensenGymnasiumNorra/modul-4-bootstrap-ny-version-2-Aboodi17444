@@ -4,38 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="music.html">Music</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">My Media</a>
+        <div class="collapse navbar-collapse show">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="series.html">Series</a></li>
+            <li class="nav-item"><a class="nav-link active" href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <main>
-      <p>Artist 1</p>
-      <p>Bästa låt:</p>
-      <p>Antal album:</p>
+    <main class="container my-5">
+      <h1 class="text-center mb-4">My Favorite Artists</h1>
 
-      <p>Artist 2</p>
-      <p>Bästa låt:</p>
-      <p>Antal album:</p>
-
-      <p>Artist 3</p>
-      <p>Bästa låt:</p>
-      <p>Antal album:</p>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Amadeo
+          <span class="badge bg-success">Best song: Poppa milligram</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Mahmoud
+          <span class="badge bg-success">Best song: Yg;n Alican</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Japparen K74
+          <span class="badge bg-success">Best song: Ruscher</span>
+        </li>
+      </ul>
     </main>
-    <footer>
-      <p>© 2026</p>
+
+    <footer class="bg-success text-light text-center py-3 mt-5">
+      <p class="mb-0">© 2026</p>
     </footer>
-    <script src="init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
